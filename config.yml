@@ -1,0 +1,25 @@
+baseURL: "https://Davenury.github.io/TW-tutorial"
+languageCode: "pl"
+defaultContentLanguage: "pl"
+
+title: "Teoria Współbieżności"
+theme: 'hugo-theme-learn'
+
+params:
+  showVisitedLinks: false
+  custom_css:
+    - css/custom.css
+  author: 'Dawid Dębowski'
+  disableBreadcrumb: false
+  disableNextPrev: true
+  ordersectionsby: "weight"
+  themeVariant: "blue"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+
+landingPageURL: "/"
+landingPageName: "<i class='fas fa-home'></i> Home"
