@@ -1,6 +1,5 @@
 ---
 title: "Motywacja"
-draft: false
 weight: 10
 ---
 
