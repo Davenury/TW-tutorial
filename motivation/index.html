@@ -1,0 +1,163 @@
+<!doctype html><html lang=pl class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.1">
+<meta name=description content>
+<meta name=author content="Dawid Dębowski">
+<link rel=icon href=/TW-tutorial/images/favicon.png type=image/png>
+<title>Motywacja :: Teoria Współbieżności</title>
+<link href=/TW-tutorial/css/nucleus.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/fontawesome-all.min.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/hybrid.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/featherlight.min.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/perfect-scrollbar.min.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/auto-complete.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/atom-one-dark-reasonable.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/theme.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/tabs.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/hugo-theme.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/theme-blue.css?1643753138 rel=stylesheet>
+<link href=/TW-tutorial/css/custom.css?1643753138 rel=stylesheet>
+<script src=/TW-tutorial/js/jquery-3.3.1.min.js?1643753138></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/TW-tutorial/motivation/>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<a href=/>
+<div class=logo>Teoria Współbieżności</div>
+</a>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=/TW-tutorial/js/lunr.min.js?1643753138></script>
+<script type=text/javascript src=/TW-tutorial/js/auto-complete.js?1643753138></script>
+<script type=text/javascript>var baseurl="https://Davenury.github.io/TW-tutorial"</script>
+<script type=text/javascript src=/TW-tutorial/js/search.js?1643753138></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=/><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/TW-tutorial/motivation/ title=Motywacja class="dd-item
+parent
+active">
+<a href=/TW-tutorial/motivation/>
+Motywacja
+</a>
+</li>
+</ul>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=/TW-tutorial/>Home Page</a> > Motywacja
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#po-co-teoria-współbieżności>Po co teoria współbieżności?</a></li>
+<li><a href=#poziomy-opisu-modelowania-i-programowania-systemów>Poziomy opisu modelowania i programowania systemów</a></li>
+<li><a href=#semafory-bariery-monitory>Semafory, bariery, monitory</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Motywacja
+</h1>
+<h3 id=po-co-teoria-współbieżności>Po co teoria współbieżności?</h3>
+<ul>
+<li>Przetwarzanie współbieżne jest obecnie podstawowym paradygmatem działania systemów komputerowych. Wyjątkami mogą być proste sterowniki wbudowane.</li>
+<li>Podstawowe cechy przetwarzania współbieżnego:
+<ul>
+<li>współdzielenie zasobów (systemy operacyjne)</li>
+<li>działanie w sieci komputerowej (przetwarzanie rozproszone)</li>
+<li>jednoczesne wykorzystanie wielu procesorów (przetwarzanie równoległe)</li>
+</ul>
+</li>
+<li>Wytwarzanie systemów współbieżnych nie daje się zautomatyzować w dostatecznym stopniu, w przeciwieństwie do tworzenia systemów sekwencyjnych.</li>
+</ul>
+<p>Teoria współbieżności to część inżynierii oprogramowania, która pozwala zrozumieć istotę działania systemów współbieżnych. Dodatkowo wprowadza ich formalny opis oraz tworzy modele służące analizie i projektowaniu.</p>
+<hr>
+<h3 id=poziomy-opisu-modelowania-i-programowania-systemów>Poziomy opisu modelowania i programowania systemów</h3>
+<ul>
+<li>Poziom rejestrów - zmiana stanu rejestru (to, co na pierwszych labach z mikroprocków)</li>
+<li>Poziom zmiennych - zmiana wartości</li>
+<li>Poziom funkcji - zmiana wartości parametru, wywołanie, powrót</li>
+<li>Poziom procesu - utworzenie, usunięcie zawieszenie, odwieszenie, wysłanie i odbiór komunikatu</li>
+<li>Poziom obiektów, komponentów, agentów - kreacja, destrukcja, wysłanie i odbiór komunikatu</li>
+</ul>
+<p>Uwaga! Jeśli modelujemy coś współbieżnego, to nie patrzymy na poziom rejestrów i zmiennych (to by była mordęga, jak nauka do tego egzaminu&mldr;).</p>
+<hr>
+<h3 id=semafory-bariery-monitory>Semafory, bariery, monitory</h3>
+<p>Ogólnie chodzi o to, żeby operacje na jakichś współdzielonych strukturach danych nie były wykonywane w tym samym czasie, bo robi to w chuja problemów (problem wyścigu, etc.).</p>
+<p>Operacja atomiczna - taka, że musi być wykonana w całości przez jedną jednostkę (na przykład proces), a w trakcie jej wykonywania nikt nie ma dostępu do tej struktury.</p>
+<p>Operacje na strukturze (P, V - zajęcie i zwolnienie semafora, wait, signal) są wzajemnie wykluczane.</p>
+<p>Komunikacja blokująca - synchronizacja w systemach z pamięcią lokalną i współdzieloną oraz w sieciowych środowiskach rozproszonych.</p>
+<ul>
+<li>Prymitywy komunikacyjne - funkcje działające w pamięci lokalnej sterujące działaniem jednostki przetwarzającej (procesu, itp.)</li>
+<li>Wysyłanie poprzez send (nieblokujące) lub bsend (blokujące). Obydwa przyjmują destination address oraz msg - wiadomość do wysłania.</li>
+<li>Odbieranie przez receive i breceive (analogicznie nieblokujące i blokujące). Przyjmują adres wysyłającego, wskaźnik na bufor, gdzie zapisać wiadomość. Receive przyjmuje dodatkowo trzeci argument, w którym zapisze, czy wiadomość przyszła (1), czy jednak nie (0). Jeśli w breceive nie nadejdzie komunikat, to funkcja zawiesza działanie jednostki, dopóki komunikat nie przyjdzie.</li>
+</ul>
+<p>Przekazywanie komunikatów w pamięci dzielonej odbywa się za pośrednictwem skrzynki pocztowej, która jest dzielona przez jednostki korespondujące. Oczywiście operacje na tej skrzynce wzajemnie się wykluczają (nie można równocześnie wkładać do skrzynki i wyciągać z niej).</p>
+<p>W środowisku rozproszonym przekazywanie komunikatów realizują protokoły komunikacyjne. Wiadomości są lokalnie buforowane.</p>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/TW-tutorial/js/clipboard.min.js?1643753138></script>
+<script src=/TW-tutorial/js/perfect-scrollbar.min.js?1643753138></script>
+<script src=/TW-tutorial/js/perfect-scrollbar.jquery.min.js?1643753138></script>
+<script src=/TW-tutorial/js/jquery.sticky.js?1643753138></script>
+<script src=/TW-tutorial/js/featherlight.min.js?1643753138></script>
+<script src=/TW-tutorial/js/highlight.pack.js?1643753138></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=/TW-tutorial/js/modernizr.custom-3.6.0.js?1643753138></script>
+<script src=/TW-tutorial/js/learn.js?1643753138></script>
+<script src=/TW-tutorial/js/hugo-learn.js?1643753138></script>
+<script src=/TW-tutorial/mermaid/mermaid.js?1643753138></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>
